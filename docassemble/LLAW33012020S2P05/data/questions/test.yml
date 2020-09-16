@@ -1,0 +1,23 @@
+variable name: list_of_services
+use objects: True
+data:
+  - name: "Women's Legal Service"
+    address: kdkdkdi
+    website: dkdkdk
+    atsi: True
+    categories:
+      - dv
+      - aod
+      - mh
+      - ho
+  - name: Roma Mitchell Legal Service
+    categories:
+      - aod
+      - dv
+  - name: Uniting Communities
+    categories:
+      - ho
+---
+code: |
+  if q1 == 'I experience violence':
+    category = 'dv'
