@@ -20,4 +20,4 @@ data:
 ---
 code: |
   if q1 == 'I experience violence':
-    category = 'dv'
+    category = 'dv
