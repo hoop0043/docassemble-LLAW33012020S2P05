@@ -1,0 +1,130 @@
+---
+question: Imminent or urgent danger?
+fields:
+  - "Are you in imminent or urgent danger?": in_danger
+    datatype: yesnoradio
+---
+question: |
+  Describe yourself.
+fields:
+  - Which region are you from?: Suburb
+    choices:
+      - Adelaide Plains
+      - Adelaide Hills/Mount Lofty Ranges
+      - Barossa Valley
+      - Eyre Peninsula
+      - Far North
+      - Fleurieu Peninsula and Kangaroo Island
+      - Limestone Coast
+      - Murray and Mallee
+      - Northern Adelaide
+      - Southern Adelaide
+      - Western Adelaide
+      - Yorke and Mid North
+  - Are you Aboriginal or Torres Strait Islander?: A_TSI
+    code: |
+      { 'y': 'Yes', 'n': 'No'}
+  - What is your Gender?: gender_fm
+    code: |
+      {'m': 'Male', 'f': 'Female', 'o': 'Other'}
+--- 
+question: |
+   Which of the following do you require assistance?
+field: require_assistance
+choices:
+  - Homelessness
+  - Mental Health
+  - Domestic Violence
+  - Drug and Alcohol
+---
+#AGE
+objects:
+  - endpoint: DADict
+---
+question: |
+  How old are you?
+field: age_eligiblity
+buttons:
+  - Under 16
+  - 16-18
+  - 18-25
+  - 25-50
+  - 50+
+---
+#Short or long term assistance
+question: |
+  Are you seeking short-term or long-term assistance or both?
+field: length_of_assistance
+choices:
+  - Short-term
+  - Long-term
+  - Both
+---
+#DV
+question: |
+  Are you affected by a form of domestic violence in your own home?
+yesno: affected_dv
+---
+question: |
+  Are you using anger or violence?
+yesno: using_anger_violence
+---
+question: |
+  Are you unable to or fearful of living in your own home?
+yesno: living_at_home
+---
+#Homelessness
+question: |
+  Do you have a fixed home address?
+yesno: fixed_address
+---
+question: |
+  Are you currently experiencing homelessness?
+yesno: experiencing_homelessness
+---
+#AOD
+question: |
+   Do you rely on alcohol and/or drugs ?
+yesno: relying_on_alcohol_drugs
+---
+question: |
+   Do you feel like you cannot control recreational use of drugs?
+yesno: use_of_drugs
+---
+question: |
+   Are you concerned about your use of drugs / alcohol?
+yesno: use_of_drugs_alcohol
+---
+#Mental Health
+question: |
+   Are you currently experiencing any of the following (anxiety, depression etc)?
+yesno: mhmentalhealth_experiences
+---
+question: |
+   Are you concerned about your mental wellbeing?
+yesno: mhconcerns_mental_wellbeing
+---
+question: |
+   Have you had or are currently experiencing suicidal thoughts?
+yesno: mhsucidial_thoughts
+---
+question: |
+  Are you experiencing mental health issues as a result of child sexual assault?
+yesno: mhchild_sexual_assualt
+---
+question: |
+  Are you experiencing mental health issues as a result of a separation?
+yesno: mhmentalhealth_seperation
+---
+question: |
+  Are you experiencing mental health issues and identify as LGBTIQA+
+yesno: mhmentalhealth_lgbtiqa
+---
+question: |
+  Are you experiencing mental health issues as a result of financial difficulty?
+yesno: mhmentalhealth_financial_difficulty
+---
+question: |
+  Are you currently caring for a person with a disability and experiencing mental health issues?
+yesno: mh_disability
+---

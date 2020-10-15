@@ -1,0 +1,587 @@
+Variable Name: List_of_services
+Use objects: True
+Data:
+- Name: 'Lifeline'
+  Categories:
+    - Domestic Violence
+    - Mental Health
+    - Homelessness
+    - Alcohol and other Drugs
+  Locations:
+    - Adelaide Plains
+    - Adelaide Hills/Mount Lofty Ranges
+    - Barossa Valley
+    - Eyre Peninsula
+    - Far North
+    - Fleurieu Peninsula and Kangaroo Island
+    - Limestone Coast
+    - Murray and Mallee
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+    - Yorke and Mid North
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 16to18
+    - 18to25
+    - 25to50
+    - 50plus
+  #DV Services
+- Name: 'Uniting Communities Domestic Violence Services'
+  Categories:
+    - Domestic Violence
+  Locations:
+    - Adelaide Plains
+    - Adelaide Hills/Mount Lofty Ranges
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+    - Murray and Mallee
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - f
+  age_category:
+    - 16to18
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'Counselling for Men'
+  Categories:
+    - Domestic Violence
+  Locations:
+    - Adelaide Plains
+    - Adelaide Hills/Mount Lofty Ranges
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+    - Murray and Mallee
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+  age_category:
+    - 16to18
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'Partner Contact Program'
+  Categories:
+    - Domestic Violence
+  Locations:
+    - Adelaide Plains
+    - Adelaide Hills/Mount Lofty Ranges
+    - Northern Adelaide
+    - Southern Adelaide
+    - Murray and Mallee
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m 
+    - f
+    - o
+  age_category:
+    - 16to18
+    - 18to25
+    - 25to50
+    - 50plus
+#Homelessness Services
+- Name: 'Streetlink Youth Program'
+  Categories:
+    - Homelessness
+  Locations:
+    - Western Adelaide
+    - Northern Adelaide
+    - Southern Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m 
+    - f
+    - o 
+  age_category:
+    - 16to18
+    - 18to25
+- Name: 'Rubys Reunification Program'
+  Categories:
+    - Homelessness
+  Locations:
+    - Limestone Coast
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 16to18
+    - 18to25
+- Name: 'Reconnecting Families'
+  Categories:
+    - Homelessness
+  Locations:
+    - Northern Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - under16
+    - 16to18
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'Kurlana Tampawardii'
+  Categories:
+    - Homelessness
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - under16
+    - 16to18
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'Homelessness Gateway Service'
+  Categories:
+    - Homelessness
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - under16
+    - 16to18
+    - 18to25
+    - 25to50
+    - 50plus
+#Mental Health Services
+- Name: 'Support for older people experiencing mental illness'
+  Categories:
+    - Mental Health
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 50plus
+- Name: 'Standby Support After Suicide'
+  Categories:
+    - Mental Health
+  Locations:
+    - Adelaide Plains
+    - Adelaide Hills/Mount Lofty Ranges
+    - Barossa Valley
+    - Eyre Peninsula
+    - Far North
+    - Fleurieu Peninsula and Kangaroo Island
+    - Limestone Coast
+    - Murray and Mallee
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+    - Yorke and Mid North
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 16to18
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'Childhood Sexual Assault Counselling'
+  Categories:
+    - Mental Health
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 16to18
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'Sexual Abuse & Sexual Assault Counselling for Young People'
+  Categories:
+    - Mental Health
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 16to18
+    - 18to25
+- Name: 'Mental Health Respite: Carer Support'
+  Categories:
+    - Mental Health
+  Locations:
+    - Barossa Valley
+    - Eyre Peninsula
+    - Far North
+    - Murray and Mallee
+    - Northern Adelaide
+    - Yorke and Mid North
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus    
+- Name: 'Headspace'
+  Categories:
+    - Mental Health
+  Locations:
+    - Limestone Coast
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 16to18
+    - 18to25
+- Name: 'Financial Counselling and Support'
+  Categories:
+    - Mental Health
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'Family Relationship Centre'
+  Categories:
+    - Mental Health
+  Locations:
+    - Fleurieu Peninsula and Kangaroo Island
+    - Southern Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'Family Mental Health Support'
+  Categories:
+    - Mental Health
+  Locations:
+    - Southern Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'Youth and Family Counselling'
+  Categories:
+    - Mental Health
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'Family and Relationship Counselling'
+  Categories:
+    - Mental Health
+  Locations:
+    - Murray and Mallee
+    - Northern Adelaide
+    - Southern Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'Bfriend'
+  Categories:
+    - Mental Health
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+#AOD
+- Name: 'New ROADS'
+  Categories:
+    - AOD
+  Locations:
+    - Limestone Coast
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'Police Drug Diversion Initiative'
+  Categories:
+    - AOD
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'New ROADS/ Streetlink southern drop-in service'
+  Categories:
+    - AOD
+  Locations:
+    - Southern Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'News ROADS Northern Connect Service'
+  Categories:
+    - AOD
+  Locations:
+    - Northern Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'New ROADS Residential Rehabilitation'
+  Categories:
+    - AOD
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'New ROADS JumpStart'
+  Categories:
+    - AOD
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'New ROADS for ex-serving members'
+  Categories:
+    - AOD
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'New ROADS family'
+  Categories:
+    - AOD
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'New ROADS Counselling'
+  Categories:
+    - AOD
+  Locations:
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+- Name: 'AOD Clean Needle Program'
+  Categories:
+    - AOD
+  Locations:
+    - Limestone Coast
+    - Northern Adelaide
+    - Southern Adelaide
+    - Western Adelaide
+  Indigenous:
+    - Yes
+    - No
+  Gender:
+    - m
+    - f
+    - o
+  age_category:
+    - 18to25
+    - 25to50
+    - 50plus
+---

@@ -1,0 +1,80 @@
+---
+include:
+  - P05_services.yml
+  - P05_questions.yml
+  - P05_endpoints.yml
+---
+mandatory: True
+question: Uniting Communities Service Provider for Interrelated Issues
+subquestion: |
+  #### Welcome
+
+  This application is service directory for people experiencing homelessness, domestic violence, mental health issues and/or AOD. 
+  
+  Please press continue if you wish to use the application.
+  
+  
+  If you do not wish to proceed, please exit the application.
+buttons:
+ - Exit: exit
+ - Continue: Keep going
+---
+mandatory: True
+code: |
+  if in_imminent_danger:
+    endpoint['imminent_danger']
+  else:
+    if age_eligibility == 'Under 16':
+      endpoint['ineligible']
+    else:
+      gender_fm
+      A_TSI
+      Suburb
+      length_of_assistance
+      require_assistance
+      if require_assistance == 'Domestic Violence':
+        if gender_fm == 'm':
+          dv_category = 'Counselling for Men':
+        elif gender_fm == 'f':
+          dv_category = 'Support for Women Experiencing Domestic Violence'
+        elif gender_fm == 'o':
+          pass
+        
+        affected_dv
+        using_anger_violence
+        living_at_home
+        endpoint['domestic_violence']
+      elif require_assistance == 'Homelessness':
+        fixed_address
+        experiencing_homelessness
+        endpoint['homelessness']
+      elif require_assistance == 'Mental Health':
+        if age_eligibility == '50+' and mhmentalhealth_experiences == True and ( Suburb == 'Northern Adelaide' or Suburb == 'Western Adelaide' or Suburb == 'Southern Adelaide' ):
+          mh_endpoint1
+        elif mhsucidial_thoughts == True:
+          mh_endpoint2
+        elif mhchild_sexual_assualt and ( Suburb == 'Northern Adelaide' or Suburb == 'Western Adelaide' or Suburb == 'Southern Adelaide' )
+          mh_endpoint3
+        elif mhchild_sexual_assualt == True and (Suburb == 'Northern Adelaide' or Suburb == 'Western Adelaide' or Suburb == 'Southern Adelaide') and (age_eligiblity == '16-18' or '18-25'):
+          mh_endpoint4
+        elif mh_disability == True and (Suburb == 'Northern Adelaide' or 'Eyre Peninsula' or 'Far North' or 'Barossa Valley' or 'Yorke Peninsula' or 'Murray and Mallee' and (age_eligiblity == '18-25' or '25-50' or '50plus'):
+          mh_endpoint5
+        
+---
+event: imminent_danger
+question: |
+  Thank you for that information.
+subquestion: |
+  % if in_danger:
+  If you are in imminent or urgent danger, please contact:
+  
+  Police, Ambulance or Fire: 000
+  
+  Lifeline: 131114
+  % endif
+  Please press the button below to continue
+Buttons:
+  - Exit: exit
+  - Restart: restart
+---
+      

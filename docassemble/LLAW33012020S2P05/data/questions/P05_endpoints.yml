@@ -1,0 +1,531 @@
+---
+#ineligible endpoint
+event: endpoint['ineligible']
+question: Eligibility requirements not met
+subquestion:
+  This app is not designed to assist this age group. Please contact 1800 615 677 for assistance.
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+#eligible endpoint
+event: endpoint['eligible']
+question: Eligibility requirements  met
+subquestion:
+  bla blah
+---
+#Domestic Violence Endpoints
+#1 Support for Women Experiencing Domestic Violence
+event: domestic_violence
+question: |
+  You are eligible for the **${dv_category}** service. 
+  This service provides support for women who are experiencing domestic violence.
+subquestion: |
+  The contact details for this service is as follows:
+  * Phone: (08) 8202 5190
+  * Addresses:
+  1. 43 Franklin Street, Adelaide SA 5000
+  2. 107 Dyson Road, Christies Beach SA 5165
+  3. 2b Morialta Drive, Smithfield SA 5114
+  4. Murray Mallee Community Health Service, 102 Swanport Road, Murray Bridge SA 5254
+  Press the exit button to be referred directly to **${dv_category}** website. Press the restart button to restart the application. 
+
+  %if wants_pcp:
+  Display something here about the Partner Connect Program
+  %endif
+buttons:
+- Exit: exit  
+  url: https://www.unitingcommunities.org/families-and-children/domestic-violence/
+- Restart: restart 
+---
+#Mental Health Endpoints
+#1 Support for older people experiencing mental illness
+event: mh_endpoint1
+question: |
+  You are eligible for the **support for older people experiencing mental illness** service. 
+  This service provides support for older people wishing to remain independent at home and in the community.
+subquestion: |
+  The contact details for this is as follows:
+  * Phone: (08) 8202 5291
+  * Address: 43 Franklin Street, Adelaide SA 5000
+  Press the exit button to be referred directly to **support for older people experiencing mental illness** website. Press the restart button to restart the application.
+buttons:
+- Exit: exit
+  url: https://www.unitingcommunities.org/older-people/living-well-at-home/
+- Restart: restart
+---
+#2 Standby Support After Suicide
+event: mh_endpoint2
+question: |
+  You are eligible for the **Standby Support After Suicide* service. 
+  This service provides support for individuals who has been affected by suicide.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (+61) 437 752 458
+  * Email: standby@unitingcommunities.org
+  Press the exit button to be referred directly to **Standby Support After Suicide** website. Press the restart button to restart the application.
+buttons:
+- Exit: exit
+  url: https://www.unitingcommunities.org/mental-health-counselling/suicide-bereavement-standby-response-service/
+- Restart: restart
+---
+#3 Childhood Sexual Assault Counselling
+event: mh_endpoint3
+question: |
+  You are eligible for the **Childhood Sexual Assault Counselling** service. 
+  This service provides support for individuals who have experienced childhood sexual assault.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5190
+  * Address: 43 Franklin Street, Adelaide SA 5000
+  * Email: counselling@unitingcommunities.org
+  Press the exit button to be referred directly to **Childhood Sexual Assault Counselling** website. Press the restart button to restart the application.
+buttons:
+- Exit: exit
+  url: https://www.unitingcommunities.org/mental-health-counselling/sexual-assault-counselling/
+- Restart: restart
+---  
+#4 Sexual Abuse & Sexual Assault Counselling for Young People
+event: mh_endpoint4
+question: |
+  You are eligible for the **Sexual Abuse & Sexual Assault Counselling for Young   People** service. 
+  This service provides support for young people who have experienced sexual abuse and sexual assault.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5060
+  * Address: 43 Franklin Street, Adelaide SA 5000
+  * Email: counselling@unitingcommunities.org
+  Press the exit button to be referred directly to **Sexual Abuse & Sexual Assault Counselling for Young People** website. Press the restart button to restart the application.
+buttons:
+- Exit: exit
+  url: https://www.unitingcommunities.org/mental-health-counselling/sexual-assault-counselling/
+- Restart: restart
+---
+#5 Mental Health Respite: Carer Support
+event: mh_endpoint5
+question: |
+  You are eligible for the **Mental Health Respite: Carer Support** service. 
+  This service provides support for carers who look after people living with a disability.
+subquestion: |
+  The contact details for this service are as follows:
+  * 41 Edinburgh Street, Port Lincoln SA 5606
+  (08) 8682 3571
+  * 33 Mackay Street, Port Augusta SA 5700
+  (08) 8641 2455
+  * 193-195 Murray Street, Tanunda SA 5232
+  (08) 8563 3333
+  * 4 Third Street, Murray Bridge SA 5253
+  (08) 8531 0571
+  * 2b Morialta Drive, Smithfield SA 5114
+  (08) 8202 5980
+  * 24 Goyder Street, Kadina SA 5554
+  (08) 8202 5261
+  Press the exit button to be referred directly to **Mental Health Respite: Carer Support** website. Press the restart button to restart the application.
+buttons:
+- Exit: exit
+  url: https://www.unitingcommunities.org/older-people/support-for-carers/
+- Restart: restart
+---
+#6 Lifeline
+event: mh_endpoint6
+question: |
+  You are eligible for the **Lifeline** service. 
+  This service provides crisis support.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: 13 11 14
+  * Email: lifelineadmin@unitingcommunities.org
+  Press the exit button to be referred directly to **Lifeline's** website. Press the restart button to restart the application.
+buttons:
+- Exit: exit
+  url: http://www.lifelineadelaide.org/
+- Restart: restart
+---
+#7 Headspace
+event: mh_endpoint7
+question: |
+  You are eligible for the **Headspace** service. 
+  This service provides support for young people with mental health issues and their families.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8725 0443
+  * Address: 171 Commercial Street East, Mount Gambier SA 5290
+  * Email: headspacemountgambier@unitingcommunities.org
+  Press the exit button to be referred directly to **Headspace's** website. Press the restart button to restart the application.
+buttons:
+- Exit: exit
+  url: https://www.unitingcommunities.org/mental-health-counselling/youth/
+- Restart: restart
+---
+#8 Financial Counselling and Support
+event: mh_endpoint8
+question: |
+  You are eligible for the **Financial Counselling and Support** service. 
+  This service provides support for individuals dealing with any form of financial difficulty.
+subquestion: |
+  The contact details for this service are as follows:
+  * Email: fconducty@unitingcommunities.org
+  * Addresses and Phone Numbers:
+  1. 43 Franklin Street, Adelaide SA 5000
+  (08) 8202 5180
+  2. 2b Morialta Drive, Smithfield SA 5114 
+  (08) 8202 5980
+  3. 107 Dyson Road, Christies Beach SA 5165
+  (08) 8202 5010
+  Press the exit button to be referred directly to **XXX** website. Press the     restart button to restart the application.
+buttons:
+- Exit: exit
+  url: https://www.unitingcommunities.org/financial-legal-services/financial-services/
+- Restart: restart
+---
+#9 Family Relationship Centre
+event: mh_endpoint9
+question: |
+  You are eligible for the **Family Relationship Centre** service. 
+  This service provides support for improving relationships through counselling or to work out care arrangements for children after separation.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5200
+  * Email: noarlungafrc@unitingcommunities.org
+  * Addresses:
+  1. 16 Telegraph Road, Kingscote SA 5223
+  2. Level 8, Marion Office Tower, Westfield Marion Shopping Centre, 297 Diagonal Road Oaklands Park SA 5046
+  3. 55 Torrens Street, Victor Harbour SA 5211
+  4. 38 Beach Road, Christies Beach SA 5165
+  5. 101/103 Rowley Road, Aldinga Beach SA 5173
+  Press the exit button to be referred directly to **Family Relationship Centres** website. Press the restart button to restart the application.
+buttons:
+- Exit: exit
+  url: https://www.unitingcommunities.org/families-and-children/family-relationships/
+- Restart: restart
+---
+#10 Family Mental Health Support
+event: mh_endpoint10
+question: |
+  You are eligible for the **Family Mental Health Support** service. 
+  This service provides support for individuals with mental health issues and their families.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5200
+  * Address: 38 Beach Road, Christies Beach SA 5165
+  * Email: noarlungafrc@unitingcommunities.org
+  Press the exit button to be referred directly to **XXX** website. Press the     restart button to restart the application.
+buttons:
+- Exit: exit
+  url: https://www.unitingcommunities.org/families-and-children/family-relationships/
+- Restart: restart
+---
+#11 Youth and Family Counselling
+event: mh_endpoint11
+question: |
+  You are eligible for the **Youth and Family Counselling** service. 
+  This service provides support for families, couples and young people with counselling and mediation.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5060
+  * Address: 43 Franklin Street, Adelaide SA 5000
+  * Email: counselling@unitingcommunities.org
+  Press the exit button to be referred directly to the **Youth and Family Counselling** website. Press the restart button to restart the application.
+buttons:
+- Exit: exit
+  url: https://www.unitingcommunities.org/families-and-children/family-relationships/
+- Restart: restart
+---
+#12 Family and Relationship Counselling
+event: mh_endpoint12
+question: |
+  You are eligible for the **Family and Relationship Counselling** service. 
+  This service provides support for families, couples and young people with counselling and mediation.
+subquestion: |
+  The contact details for this service are as follows:
+  * Email: counselling@unitingcommunities.org
+  * Addresses and Phone Numbers:
+  1. 2b Morialta Drive, Smithfield SA 5114
+  (08) 8202 5980
+  2. 96-104 Swanport Road, Murray Bridge SA 5243
+  (08) 8202 5190
+  3. 107 Dyson Road, Christies Beach SA 5165
+  (08) 8202 5010
+  4. 43 Franklin Street, Adelaide SA 5000
+  (08) 8202 5190
+  Press the exit button to be referred directly to the **Family and Relationship Counselling** website. Press the restart button to restart the application.
+buttons:
+- Exit: exit
+  url: https://www.unitingcommunities.org/families-and-children/family-relationships/
+- Restart: restart
+---
+#13 Bfriend
+event: mh_endpoint13
+question: |
+  You are eligible for the **Bfriend** service. 
+  This service provides support for individuals who identify as LGBTIQA+ and their loved ones.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5190
+  * Address: 43 Franklin Street, Adelaide SA 5000
+  * Email: bfriend@unitingcommunities.org
+  Press the exit button to be referred directly to **XXX** website. Press the     restart button to restart the application.
+buttons:
+- Exit: exit
+  url: https://www.unitingcommunities.org/mental-health-counselling/lgbtiq-services-bfriend/
+- Restart: restart
+---
+#Homelessness Endpoints
+#1 Streetlink Youth Program
+event: homelessness_endpoint1
+question: |
+  You are eligible for the **Streetlink Youth Program** service. 
+  This service provides a safe place for young people to seek information, support and connection to services.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5950
+  * Address: 43 Franklin Street, Adelaide SA 5000
+  * Email: streetlinkadmin@unitingcommunities.org
+  Press the exit button to be referred directly to the **Streetlink Youth Program* website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/youth-services/support-young-people-homeless-risk/
+  - Restart: restart
+---
+#2 Ruby's Reunification Program
+event: homelessness_endpoint2
+question: |
+  You are eligible for the **Ruby's Reunification Program** service. 
+  This service provides support for individuals on health, well-being and reconnecting with their families.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5060
+  * Address: 43 Franklin Street, Adelaide SA 5000
+  * Email: enquiries@unitingcommunities.org
+  Press the exit button to be referred directly to **Ruby's Reunification Program** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/youth-services/support-young-people-homeless-risk/
+  - Restart: restart
+---
+#3 Reconnecting Families
+event: homelessness_endpoint3
+question: |
+  You are eligible for the **Reconnectig Families** service. 
+  This service provides support for individuals on health, well-being and reconnecting with their families.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5939 and (08) 8202 5938
+  * Address: 94 Waterloo Corner Road, Paralowie SA 5108
+  Press the exit button to be referred directly to **Reconnecting Families** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/youth-services/support-young-people-homeless-risk/
+  - Restart: restart
+---
+#4 Kurlana Tampawardii
+event: homelessness_endpoint4
+question: |
+  You are eligible for the **Kurlana Tampawardii** service. 
+  This service provides short and long term accommodation for Aboriginal people from remote and rural communities when visiting Adelaide.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5610
+  * Address: 45-47 Tapleys Hill Road, Hendon SA 5014
+  * Email: acc@unitingcommunities.org
+  Press the exit button to be referred directly to **Kurlana Tampawardii** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/aboriginal-services/kurlana-tampawardli/
+  - Restart: restart
+---
+#5 Homeless Connect SA
+event: homelessness_endpoint5
+question: |
+  You are eligible for the **Homeless Connect SA** service. 
+  This service provides support for individuals who are at risk of becoming homeless.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: 1800 003 308
+  * Email: hgs_referrals@unitingcommunities.org
+  Press the exit button to be referred directly to **Homeless Connect SA** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/homelessness-emergency-community-support/
+  - Restart: restart
+---
+#AOD Endpoints
+#1 New ROADS
+event: aod_endpoint1
+question: |
+  You are eligible for the **New ROADS** service. 
+  This service provides support for long term and sustainable changes to use of alcohol and other drugs.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5690
+  * Address: 11 Wehl Street, Mount Gambier SA 5290
+  * Email: newroadsenquiries@unitingcommunities.org
+  Press the exit button to be referred directly to **New ROADS** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/homelessness-emergency-community-support/drug-alcohol-support/
+  - Restart: restart
+---
+#2 Police Drug Diversion Initiative
+event: aod_endpoint2
+question: |
+  You are eligible for the **Police Drug Diversion Initiative** service. 
+  This service provides support for long term and sustainable changes to use of alcohol and other drugs.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5950
+  * Address: 43 Franklin Street, Adelaide SA 5000
+  Press the exit button to be referred directly to **Police Drug Diversion Initiative** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/homelessness-emergency-community-support/drug-alcohol-support/
+  - Restart: restart
+---
+#3 New ROADS/ Streetlink southern drop-in service
+event: aod_endpoint3
+question: |
+  You are eligible for the **New ROADS/ Streetlink southern drop-in service**. 
+  This service provides support for long term and sustainable changes to use of alcohol and other drugs.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5690
+  * Address: 107 Dyson Road, Christies Beach SA 5165
+  * Email: newroadsenquiries@unitingcommunities.org
+  Press the exit button to be referred directly to **New ROADS/ Streetlink souther drop-in service** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/homelessness-emergency-community-support/drug-alcohol-support/
+  - Restart: restart
+---
+#4 News ROADS Northern Connect Service
+event: aod_endpoint4
+question: |
+  You are eligible for the **New ROADS Northern Connect Service**.  
+  This service provides support for long term and sustainable changes to use of alcohol and other drugs.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5690
+  * Address: 2b Morialta Drive, Smithfield SA 5114
+  * Email: newroadsenquiries@unitingcommunities.org
+  Press the exit button to be referred directly to **New ROADS Northern Connect Service** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/homelessness-emergency-community-support/drug-alcohol-support/
+  - Restart: restart
+---
+#5 New ROADS Residential Rehabilitation
+event: aod_endpoint5
+question: |
+  You are eligible for the **New ROADS Residential Rehabiliation** service. 
+  This service provides support for long term and sustainable changes to use of alcohol and other drugs.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5690
+  * Email: newroadsenquiries@unitingcommunities.org
+  * Addresses: 
+  1. 2b Morialta Drive, Smithfield SA 5114
+  2. 107 Dyson Road, Christies Beach SA 5165
+  3. 43 Franklin Street, Adelaide SA 5000
+  Press the exit button to be referred directly to **New ROADS Residential Rehabilitation** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/homelessness-emergency-community-support/drug-alcohol-support/
+  - Restart: restart
+---
+#6 New ROADS JumpStart
+event: aod_endpoint6
+question: |
+  You are eligible for the **New ROADS Jumpstart** service. 
+  This service provides support for long term and sustainable changes to use of alcohol and other drugs.
+subquestion: |
+  The contact details for this service are as follows:
+  * Email: newroadsenquiries@unitingcommunities.org
+  * Addresses and Phone Numbers: 
+  1. 2b Morialta Drive, Smithfield SA 5114
+  (08) 8202 5980
+  2. 107 Dyson Road, Christies Beach SA 5165
+  (08) 8202 5010
+  3. 43 Franklin Street, Adelaide SA 5000
+  (08) 8202 5690
+  Press the exit button to be referred directly to **New ROADS Jumpstart** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/homelessness-emergency-community-support/drug-alcohol-support/
+  - Restart: restart
+---
+#7 New ROADS for ex-serving members
+event: aod_endpoint7
+question: |
+  You are eligible for the **New ROADS for ex-serving members** service. 
+  This service provides support for long term and sustainable changes to use of alcohol and other drugs for ex-service members.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5690
+  * Address: 43 Franklin Street, Adelaide SA 5000
+  * Email: newroadsenquiries@unitingcommunities.org
+  Press the exit button to be referred directly to **New ROADS for ex-serving members** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/homelessness-emergency-community-support/drug-alcohol-support/
+  - Restart: restart
+---
+#8 New ROADS family
+event: aod_endpoint8
+question: |
+  You are eligible for the **New ROADS Family** service. 
+  This service provides support for long term and sustainable changes to use of alcohol and other drugs.
+subquestion: |
+  The contact details for this service are as follows:
+  * Email: newroadsenquiries@unitingcommunities.org
+  * Addresses and Phone Numbers: 
+  1. 2b Morialta Drive, Smithfield SA 5114
+  (08) 8202 5980
+  2. 107 Dyson Road, Christies Beach SA 5165
+  (08) 8202 5010
+  3. 43 Franklin Street, Adelaide SA 5000
+  (08) 8202 5690
+  Press the exit button to be referred directly to **New ROADS Family** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/homelessness-emergency-community-support/drug-alcohol-support/
+  - Restart: restart
+---
+#9 New ROADS Counselling
+event: aod_endpoint9
+question: |
+  You are eligible for the **New ROADS Counselling** service. 
+  This service provides support for long term and sustainable changes to use of alcohol and other drugs.
+subquestion: |
+  The contact details for this service are as follows:
+  * Phone: (08) 8202 5690
+  * Email: newroadsenquiries@unitingcommunities.org
+  * Addresses: 
+  1. 2b Morialta Drive, Smithfield SA 5114
+  2. 107 Dyson Road, Christies Beach SA 5165
+  3. 43 Franklin Street, Adelaide SA 5000
+  Press the exit button to be referred directly to **New ROADS Counselling** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/homelessness-emergency-community-support/drug-alcohol-support/
+  - Restart: restart
+---
+#10 AOD Clean Needle Program
+event: aod_endpoint10
+question: |
+  You are eligible for the **Clean Needle Program* service. 
+  This service provides support for long term and sustainable changes to use of alcohol and other drugs.
+subquestion: |
+  The contact details for this service are as follows:
+  * Addresses:
+  1. 2b Morialta Drive, Smithfield SA 5114
+  (08) 8202 5980
+  2. 43 Franklin Street, Adelaide SA 5000
+  (08) 8202 5690
+  3. 11 Wehl Street, Mount Gambier SA 5291
+  (08) 8202 5030
+  Press the exit button to be referred directly to the **Clean Needle Program** website. Press the restart button to restart the application.
+buttons:
+  - Exit: exit
+    url: https://www.unitingcommunities.org/homelessness-emergency-community-support/drug-alcohol-support/
+  - Restart: restart
+--- 
